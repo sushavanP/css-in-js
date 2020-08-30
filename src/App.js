@@ -1,17 +1,23 @@
 import React from "react";
+import styled from "styled-components";
 import { Card } from "./components/card.component";
 import "./styles.css";
 
-const textStyles = {
-  color: "red",
-  fontSize: "24px"
-};
+const Text = styled.div`
+  color: red;
+  font-size: 28px;
+`;
+
+// const textStyles = {
+//   color: "red",
+//   fontSize: "24px"
+// };
 
 function App() {
   return (
     <div className="App">
       <Card>
-        <div style={textStyles}>I am a component</div>
+        <Text>I am a component</Text>
       </Card>
     </div>
   );
