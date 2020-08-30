@@ -6,6 +6,8 @@ import "./styles.css";
 const Text = styled.div`
   color: red;
   font-size: 28px;
+  border: ${({ isActive }) =>
+    isActive ? "1px solid black" : "3px dotted black"};
 `;
 
 // const textStyles = {
@@ -17,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Card>
-        <Text>I am a component</Text>
+        <Text isActive={true}>I am a component</Text>
       </Card>
     </div>
   );
